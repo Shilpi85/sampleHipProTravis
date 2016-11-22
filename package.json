@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "author": {
+    "name": "Shilpi Singh"
+  },
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">= 0.4.1"
+  },
+  "dependencies": {
+    "protractor": "2.2.0"
+  },
+  "keywords": [
+    "protractor",
+    "angular",
+    "angularjs",
+    "testing",
+    "behaviour driven development",
+    "bdd",
+    "selenium"
+  ],
+  "devDependencies": {
+    "chai": "*",
+    "chai-as-promised": "*"
+  }
+}
