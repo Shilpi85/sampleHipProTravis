@@ -25,4 +25,14 @@ describe('firstProtractorTest', function () {
     // Then result of operation should equal "5"
     this.actionwords.resultOfOperationShouldEqualP1("5");
   });
+
+  it('newAdditionTestA', function () {
+    // Given I open "https://juliemr.github.io/protractor-demo/"
+    this.actionwords.iOpenP1("https://juliemr.github.io/protractor-demo/");
+    // When I want to do "2" "+" "4"
+    this.actionwords.iWantToDoP1P2P3("2", "+", "4");
+    // Then result of operation should equal "6"
+    this.actionwords.resultOfOperationShouldEqualP1("6");
+  });
+
 });
