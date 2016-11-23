@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-<testsuite name="firstProtractorTest" errors="0" tests="2" failures="0" time="13.588" timestamp="2016-11-22T23:47:22">
-  <testcase classname="firstProtractorTest" name="Subtraction" time="7.366"></testcase>
-  <testcase classname="firstProtractorTest" name="newAdditionTest" time="6.22"></testcase>
+<testsuite name="firstProtractorTest" errors="0" tests="2" failures="0" time="13.798" timestamp="2016-11-23T11:09:16">
+  <testcase classname="firstProtractorTest" name="Subtraction" time="7.654"></testcase>
+  <testcase classname="firstProtractorTest" name="newAdditionTest" time="6.144"></testcase>
 </testsuite>
 </testsuites>
