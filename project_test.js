@@ -23,6 +23,6 @@ describe('firstProtractorTest', function () {
     // When I want to do "1" "+" "4"
     this.actionwords.iWantToDoP1P2P3("1", "+", "4");
     // Then result of operation should equal "5"
-    this.actionwords.resultOfOperationShouldEqualP1("5");
+    this.actionwords.resultOfOperationShouldEqualP1("6");
   });
 });
