@@ -3,10 +3,10 @@ sudo: required
 
 language: node_js
 node_js:
-  - "5"
+  "5"
 
   addons:
-    - firefox: "43.0"
+    firefox: "43.0"
 
 before_install:
 
