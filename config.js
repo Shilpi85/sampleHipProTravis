@@ -1,14 +1,17 @@
 exports.config = {
+
+    framework: 'jasmine2',
     onPrepare: function () {
-        require ('jasmine-reporters');
 
-        jasmine.getEnv().addReporter(
-            new jasmine.JUnitXmlReporter('outputdir', true, true)
-        );
-
+        var jasmineReporters = require('jasmine-reporters');
+        jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+            consolidateAll: true,
+            filePrefix: 'testResult',
+            savePath: 'outputdir'
+        }));
 
     },
-    //framework: 'jasmine',
+
 
     jasmineNodeOpts: {
         showColors: true,
