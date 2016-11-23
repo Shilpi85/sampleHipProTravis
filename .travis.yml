@@ -4,6 +4,10 @@ sudo: required
 language: node_js
 node_js:
   - "5"
+
+  addons:
+    firefox: "43.0"
+
 before_install:
 
   # Install chrome & chromium
@@ -15,12 +19,17 @@ before_install:
 before_script:
   # Install chrome & chromium
 
+  echo "Extracting firefox and setting PATH variable..."
+  tar -xjf /tmp/firefox-43.0.tar.bz2 --directory /tmp
+  export PATH="/tmp/firefox:$PATH"
+  echo "Using firefox version `firefox --version`"
+
   - sudo apt-get update && sudo apt-get install -y chromium-bsu
   # Install UI test requirements
   - npm install -g protractor@3.3.0 grunt-cli
 #  - npm install -g protractor@4.0.9 grunt-cli
   - webdriver-manager update #--versions.chrome 2.24
-  - webdriver-manager start #--versions.chrome 2.24
+ # - webdriver-manager start #--versions.chrome 2.24
   # Update Ruby cucumber dependencies
 
   # Update Node UI test dependencies
