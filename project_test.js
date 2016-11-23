@@ -1,11 +1,11 @@
-var Actionwords = require('./Actionwords');
+var getactionwords = require('./actionwords');
 
 describe('firstProtractorTest', function () {
-  
+
 
 
   beforeEach(function () {
-    this.actionwords = Object.create(Actionwords);
+    this.actionwords = Object.create(getactionwords);
   });
 
   it('Subtraction', function () {

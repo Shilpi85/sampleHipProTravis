@@ -69,6 +69,7 @@ script:
   # Generate html report
 
 after_success:
+
   #Run P3 cucumber tests
 
   #Run protractor tests
@@ -82,6 +83,8 @@ after_failure:
     #Run P3 cucumber tests
 
 after_script:
+  #- curl -X POST -F file=@<path to your result file> https://hiptest.net/import_test_reports/204871700476243602928025924115078199192677315950726035998/52665/junit
+  - curl -X POST -F file=@outputdir/TEST-firstProtractorTest.xml https://hiptest.net/import_test_reports/204871700476243602928025924115078199192677315950726035998/52665/junit
   #Set above, - export DATE=`TZ=America/New_York date "+%m-%d-%y-%H%M"`
   - export DATE_TRIM=`TZ=America/New_York date "+%m-%d-%y"`
   #Send result json to S3 for review

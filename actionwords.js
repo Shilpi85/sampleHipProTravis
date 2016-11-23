@@ -4,7 +4,7 @@ var chaiAsPromised = require('chai-as-promised');
 chai.use(chaiAsPromised);
 var expect = require('chai').expect;
 
-var Actionwords = {
+var actionwords = {
   iOpenP1: function (p1) {
     browser.get(p1);
   },
@@ -22,4 +22,4 @@ var Actionwords = {
     });
   }
 };
-module.exports = Actionwords;
+module.exports = actionwords;
