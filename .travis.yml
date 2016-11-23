@@ -12,7 +12,15 @@ before_install:
   - sudo apt-get update && sudo apt-get install -y chromium-browser
   # Install xvfb
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
+addons:
+  firefox: "43.0"
+
 before_script:
+  #Settingup FF Browser
+  - echo "Extracting firefox and setting PATH variable..."
+  - tar -xjf /tmp/firefox-43.0.tar.bz2 --directory /tmp
+  - export PATH="/tmp/firefox:$PATH"
+  - echo "Using firefox version `firefox --version`"
   # Install chrome & chromium
 
   - sudo apt-get update && sudo apt-get install -y chromium-bsu
