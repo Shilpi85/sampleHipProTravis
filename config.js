@@ -1,11 +1,14 @@
-
 exports.config = {
     onPrepare: function () {
-        require('jasmine-reporters');
+        require ('jasmine-reporters');
+
         jasmine.getEnv().addReporter(
             new jasmine.JUnitXmlReporter('outputdir', true, true)
         );
+
+
     },
+    //framework: 'jasmine',
 
     jasmineNodeOpts: {
         showColors: true,
@@ -16,10 +19,13 @@ exports.config = {
     directConnect: true,
 
     capabilities: {
-        browserName : 'firefox'
+        browserName : 'firefox',
+        version: ''
+
     },
 
-    //seleniumAddress: 'http://localhost:4444/wd/hub',
+    //
+    // seleniumAddress: 'http://localhost:4444/wd/hub',
 
     specs: ['project_test.js']
 
