@@ -64,7 +64,7 @@ script:
 
 #  - protractor config.js --cucumberOpts.tags='~@broken' --cucumberOpts.tags=$CUC_TAG$PRIORITY --troubleshoot
   # Run protractor only if the tag is UI or demo
-  - Start-Process webdriver-manager start -passthru
+  #- Start-Process webdriver-manager start -passthru
   - protractor config.js
   # Generate html report
 
