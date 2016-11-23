@@ -13,14 +13,13 @@ exports.config = {
         print: function() {}
     },
 
-    capabilities: {
-        'browserName' : 'firefox',
-        shardTestFiles: true,
-        maxInstances: 1
+    directConnect: true,
 
+    capabilities: {
+        browserName : 'firefox'
     },
 
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    //seleniumAddress: 'http://localhost:4444/wd/hub',
 
     specs: ['project_test.js']
 
