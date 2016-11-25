@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="firstProtractorTest" timestamp="2016-11-23T15:00:39" hostname="localhost" time="16.399" errors="0" tests="3" skipped="0" disabled="0" failures="1">
+  <testcase classname="firstProtractorTest" name="Subtraction" time="5.613" />
+  <testcase classname="firstProtractorTest" name="newAdditionTest" time="5.378" />
+  <testcase classname="firstProtractorTest" name="newAdditionTestA" time="5.408">
+   <failure type="exception" message="Failed: expected &apos;6&apos; to equal &apos;67&apos;"><![CDATA[AssertionError: expected '6' to equal '67'
+    at /Users/singhs10/project_firstProTravis/actionwords.js:21:24
+    at /Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/lib/element.js:665:16
+    at [object Object].promise.Promise.goog.defineClass.invokeCallback_ (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:1337:14)
+    at [object Object].promise.ControlFlow.goog.defineClass.goog.defineClass.abort_.error.executeNext_.execute_ (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2776:14)
+    at [object Object].promise.ControlFlow.goog.defineClass.goog.defineClass.abort_.error.executeNext_ (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2758:21)
+    at goog.async.run.processWorkQueue (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/async/run.js:124:15)
+    at process._tickCallback (node.js:382:9)
+From: Task: Run it("newAdditionTestA") in control flow
+    at Object.<anonymous> (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/jasminewd2/index.js:81:14)
+    at attemptAsync (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1819:24)
+    at QueueRunner.run (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1774:9)
+    at /Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1801:16
+    at /Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1745:9
+    at /Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/jasminewd2/index.js:18:5
+    at [object Object].promise.Promise.goog.defineClass.invokeCallback_ (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:1337:14)
+    at [object Object].promise.ControlFlow.goog.defineClass.goog.defineClass.abort_.error.executeNext_.execute_ (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2776:14)
+    at [object Object].promise.ControlFlow.goog.defineClass.goog.defineClass.abort_.error.executeNext_ (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2758:21)
+    at goog.async.run.processWorkQueue (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/async/run.js:124:15)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/Users/singhs10/project_firstProTravis/project_test.js:29:3)
+    at addSpecsToSuite (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:743:25)
+    at Env.describe (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:713:7)
+    at jasmineInterface.describe (/Users/singhs10/.nvm/versions/node/v5.3.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:3219:18)
+    at Object.<anonymous> (/Users/singhs10/project_firstProTravis/project_test.js:3:1)
+    at Module._compile (module.js:398:26)
+    at Object.Module._extensions..js (module.js:405:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>

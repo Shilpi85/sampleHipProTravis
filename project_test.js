@@ -32,7 +32,7 @@ describe('firstProtractorTest', function () {
     // When I want to do "2" "+" "4"
     this.actionwords.iWantToDoP1P2P3("2", "+", "4");
     // Then result of operation should equal "6"
-    this.actionwords.resultOfOperationShouldEqualP1("6");
+    this.actionwords.resultOfOperationShouldEqualP1("67");
   });
 
 });
