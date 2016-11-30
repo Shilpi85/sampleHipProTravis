@@ -1,11 +1,6 @@
-var getactionwords = require('./actionwords');
-
 describe('firstProtractorTest', function () {
-
-
-
   beforeEach(function () {
-    this.actionwords = Object.create(getactionwords);
+    this.actionwords = Object.create(Actionwords);
   });
 
   it('Subtraction', function () {
@@ -26,13 +21,12 @@ describe('firstProtractorTest', function () {
     this.actionwords.resultOfOperationShouldEqualP1("5");
   });
 
-  it('newAdditionTestA', function () {
+  it('Test_sync', function () {
     // Given I open "https://juliemr.github.io/protractor-demo/"
     this.actionwords.iOpenP1("https://juliemr.github.io/protractor-demo/");
-    // When I want to do "2" "+" "4"
-    this.actionwords.iWantToDoP1P2P3("2", "+", "4");
-    // Then result of operation should equal "6"
-    this.actionwords.resultOfOperationShouldEqualP1("67");
+    // When I calculate "100" "/" "2"
+    this.actionwords.iCalculateN1N2N3("100", "/", "2");
+    // Then result of operation should equal "50"
+    this.actionwords.resultOfOperationShouldEqualP1("50");
   });
-
 });

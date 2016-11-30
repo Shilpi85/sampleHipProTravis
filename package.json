@@ -7,9 +7,10 @@
   },
   "main": "lib/index.js",
   "engines": {
-    "node": ">= 0.4.1"
+    "node": "5.3.0"
   },
   "dependencies": {
+    "os-tmpdir": "^1.0.2",
     "protractor": "3.0.0"
   },
   "keywords": [

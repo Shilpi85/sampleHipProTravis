@@ -20,6 +20,11 @@ var actionwords = {
       console.log('Value of Result is: ' + value);
       expect(value).to.equal(p1);
     });
+  },
+  iCalculateN1N2N3: function (n1, n2, n3) {
+    element(by.model('first')).sendKeys(n1);
+    element(by.model('operator')).sendKeys(n2);
+    element(by.model('second')).sendKeys(n3);
+    element(by.id('gobutton')).click();
   }
 };
-module.exports = actionwords;
